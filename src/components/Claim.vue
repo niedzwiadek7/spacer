@@ -17,8 +17,9 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .claimWrapper {
+    color: white;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -28,10 +29,27 @@ export default {
 
   .claim {
     font-size: 50px;
+    margin: 0;
+
+    @media (min-width: 768px) {
+      font-size: 80px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 100px;
+    }
   }
 
   .subclaim {
     font-size: 13px;
-    margin: 15px 0 0 0;
+    margin: 25px 0 0 0;
+    font-weight: 400;
+
+    @media (min-width: 768px) {
+      font-size: 17px;
+      letter-spacing: 3px;
+      line-height: 1;
+      width: 500px;
+    }
   }
 </style>
